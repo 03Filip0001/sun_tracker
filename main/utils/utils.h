@@ -4,6 +4,6 @@
 #include <stdint.h>
 #include "freertos/FreeRTOS.h"
 
-#define delay(ms) (vTaskDelay(pdMS_TO_TICKS(ms)) )
+#define delayMS(ms) (vTaskDelay(pdMS_TO_TICKS(ms)) )
 
 #endif

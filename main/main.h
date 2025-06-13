@@ -6,6 +6,8 @@
 #include "credentials.h"
 #include "utils/utils.h"
 
+#include "wifi/wifi.h"
+
 #define CORE_ID_0 0
 #define CORE_ID_1 1
 
