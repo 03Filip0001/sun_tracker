@@ -63,7 +63,8 @@ esp_err_t check_wifi_conn(){
         ESP_LOGI(WIFI_TAG, "Connected");
     }else{
         __WIFI_CONNECTED = false;
-        ESP_LOGI(WIFI_TAG, "Not connected");
+        ESP_LOGI(WIFI_TAG, "Not connected, trying to reconnect...");
+        wifi_connect();
     }
 
     return err;
